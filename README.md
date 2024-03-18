@@ -4,17 +4,18 @@
  The Bulk Image Scrapper application introduces a modern GUI powered by [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter/tree/master), replacing the previous console-only interface. The simple GUI provides an easily accessible interface for scraping image CDNs for personal use. This application was specifically made to handle JPEG, PNG, and GIF image types using a sequential naming scheme. It is compatible with Windows, Mac, and Linux systems.
  
 ## Usage
-Update the CDN Links:
-1. Open main.py and replace the existing links with the CDN servers of your preference.
 
-Launch the Application:
-2. Execute python main.py in your terminal. This command initiates the GUI application.
+1. **Update the CDN Links:**
+Open `main.py` and replace the existing links with the CDN servers of your preference.
 
-Input Preferences:
-3. Provide the desired server folder name for downloading and specify the picture range. You can provide an optional folder name as the image destination. Choose the preferred CDN and image type. The downloader will attempt to fetch alternative image formats if the primary one is unavailable.
+2. **Launch the Application:**
+Execute `python main.py` in your terminal. This command initiates the GUI application.
 
-Commence Download:
-4. Click on the "Start" button to begin the download process.
+3. **Input Preferences:**
+Provide the desired server folder name for downloading and specify the picture range. Choose the preferred CDN and image type. The downloader will attempt to fetch alternative image formats if the primary one is unavailable.
+
+4. **Commence Download:**
+Click on the "Start" button to begin the download process. 
 
 Ensure that you have the necessary permissions and dependencies installed to execute the application smoothly.
 
