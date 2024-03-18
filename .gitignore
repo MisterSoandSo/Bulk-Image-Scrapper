@@ -153,3 +153,4 @@ cython_debug/
 
 # Ignore numerical folders
 [0-9]*/
+temp.txt

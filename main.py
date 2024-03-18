@@ -1,5 +1,7 @@
 import customtkinter
+import threading
 from backend.utils import download_batch
+
 # Configurations
 LINKS = [
     "https://i.example.net/galleries/",
@@ -96,7 +98,8 @@ class App(customtkinter.CTk):
     # Start
     def sidebar_button_event1(self):
         cdn_source, image_type, directory, fname, start, end = self.get_variables()
-        download_batch(cdn_source, image_type, directory, fname, start, end)
+        thread = threading.Thread(target=download_batch,args=(cdn_source, image_type, directory, fname, start, end))
+        thread.start()
 
     # End
     def sidebar_button_event2(self):
